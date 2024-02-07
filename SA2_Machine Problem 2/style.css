@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease-out, background-color 0.5s ease-in-out;
+    border: none;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border: 5px solid rgba(0, 0, 0, 0.7); /* Kulay ng transparent black border (adjustable ang alpha) */
+    background-color: transparent; /* Transparent background */
+    transition: transform 1s ease-in-out, border 1s ease-in-out; /* Baguhin pati ang border sa animation */
+}
